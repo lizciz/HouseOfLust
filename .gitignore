@@ -1,4 +1,10 @@
+# Compiled Renpy files
 *.rpyc
 *rpymc
+
+# Renpy caches and saves
 cache/
 saves
+
+# Renpy files generated during runs
+log.txt
