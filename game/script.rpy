@@ -23,7 +23,7 @@ transform centerright:
 
 # The game starts here.
 
-label start:
+label day01:
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
@@ -322,7 +322,8 @@ label start:
     "You change and brush your teeth, then get into bed."
     "You crawl under the covers in the unfamiliar bed, in which you will be spending the nights for the coming three months."
 
-
+label day02:
+    
     scene black
     centered "The next day" # day 2
 
@@ -417,11 +418,13 @@ label start:
     "You leave your [l_r_ps] room and head downstairs."
     "After a short while, the whole family is gathered in the kitchen for breakfast."
 
-    scene house kitchen day
-    show player eating_in_kitchen
+    scene house kitchen_table day
+    show kitchen_table nochairs empty
     show mom eating_in_kitchen
     show bigsister eating_in_kitchen
     show littlesister eating_in_kitchen
+    show player eating_in_kitchen
+    show kitchen_table_breakfast
 
     "... Small talk ..."
 
