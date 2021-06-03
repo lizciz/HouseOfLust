@@ -1,0 +1,408 @@
+House of Lust
+(Further development of Comics.txt #4)
+
+
+Abstract:
+---------
+
+Play as young guy, living with mother and sisters.
+Mother is a writer, typically works from home. She has gotten an opportunity to spend some time (a few months?) at an old cottage in the woods during summer. Beautiful nature, where she can write. Both kids (you and sister) will come along and spend summer there. You think it could be kind of fun, but are generally not thrilled about it.
+
+A mysterious aura/force surround the house, that slowly changes the family. You will experience growth in cock and balls, and cum production. Mother and sister will get larger tits and more voluptious figures. Mentally you will start to bend your morals, and find each other more appealing and attractive. Slowly it leads to sexual encounters.
+
+Intro:
+
+You talk with a fried of yours. Topic of summer comes up and you tell the short version to your friend about spending summer at the cottage. Bring up idea that they could possibly visit.
+Inform that yes, your sister will be coming too.
+
+Later, nearing summer, you have packed your car and the family is off.
+
+Arrive at cottage. Comment about first impression. Mixed reactions. No technology, no cell phone coverage.
+Tour around the place, inside and outside. Find bed rooms and writing room for mother. No power grid, personal generator. At least water supply and working toilet.
+
+Mother has made arrangements for antenna and internet to be installed later.
+
+
+
+Technical:
+----------
+
+Build with Ren'py. In general, use background images and "scene" images, with characters as seperate appearing on top of background during dialog.
+Special scenes rendered in fullscreen, with characters included, or possibly characters and foreground objects, still on top of background.
+
+Seperate dialog files? Easier for translations. Look into how it's done.
+
+Visual novel, with dialog choices, branching story?
+Alt: Character development simular to Mass effect/Dragon Age, where options gives you stacks of character traints, e.g. "funny", "serious", "caring" etc. and some dialog are chosen based on those stats. This could make it feel more personalized, but not require much (any) story branches.
+
+Choices could take form of gaining favour points. I.e. you du stuff for the girls, and later on you might convince them to repay you in other ways.
+
+
+character dialog short hands:
+n - Narrator
+m - Mom
+l - Little sister
+b - Big sister
+p - Player
+
+define characters' names, titles, relations and nick names
+format: x_y where x is character identifier (same as above) and y is one of:
+
+    n - name
+    ns - name (ägande form), i.e. including suffix 's
+    t - title
+    r_m - relation to m, where m is an identifier
+    nn_m - what m normally calls this person, where m is an identifier
+    ln - last name
+
+So, e.g. for mom:
+    m_n = "Melinda"
+    m_ns = "Melinda's"
+    m_t = ?
+    m_r_l = "mother"
+    m_r_b = "mother"
+    m_r_p = "mother"
+    m_nn_l = l_n
+    m_nn_b = l_b
+    m_nn_p = l_p
+    m_ln = Bennet
+
+little sister:
+    Amanda
+
+big sister:
+    Jolie
+    
+for player:
+    p_n = "Stephen"
+    p_ns = "Stephen's"
+    p_t = ?
+    p_r_l = "brother"
+    p_r_b = "brother"
+    p_r_m = "son"
+    p_nn_l = l_n
+    p_nn_b = l_b
+    p_nn_m = "mom"
+    p_ln = ?
+
+
+
+Characters:
+-----------
+
+Player, 20 year old guy. studying second year at university/collage. computer science?
+    into science and technology, socially awkward, non-confrontational. Has always looked up to big sister, protective of little sister.
+Mom, 44 years old, writer. Divorced since a couple of years ago.
+    Has gotten into yoga lately, because she feels unattractive and wants to keep fit.
+Big sister, 24 years old. Athletic and fit, plays sports, works out (well defined butt and thighs). Typically wears active wear.
+    Bisexual, has been in relationships with both male and female partners, family is aware. (Currently in relationship with girl? she comes to visit at some point)
+Little sister, 18 years old. similar interests as player (mathematics? biology? science in general, does well in school) friendly and kind of shy, virgin.
+    Only ever had girl friends. Will start at same university as player after summer.
+
+
+
+Events:
+-------
+
+You prepared by having some porn on your phone, since there is no internet.
+(Big?) sister, at some point, even though she would normally never do this, asks you if you have any porn, because she is horny and needs help getting off.
+
+A delivery girl (perhaps mail is being redirected to you, so she comes once a week) comes around every now and again. Kind of a lax job. You and her talk a bit, and she eventually starts to feel the effect of the house too.
+One time, when she comes back, she purposefully removes her jacket and dress with sheer top and no bra, tries to seduce you.
+You caress her tits from behind, and finger her. She sucks you off, and is shocked by the huge amount of cum you spray over her face.
+
+The delivery girl arrives with mail, and a "special packet" for you. turns out to be a condom, and she wants you to fuck her, like behind a tree
+
+Possibly, some friends visiting?
+
+Moms book slowly evelves into more sexual. Throughout the story, she talks about it, and slowly introduces more sexual tension, and asks family for advice and suggestions.
+
+Later repeat of seeing big sister in bathroom about to shower. "I really need to pee", ok, you pee while she undress? or wait. she looks at your dick...
+
+Little sister want to talk to big sister. embaressed, want to ask how big sister foundout that she was bisexual. big sister tells the story
+    first two people she was in relationship with was guys, she thought she was "normal" like that
+    slowly started to realize that girls could be beatutiful, and sexy. felt weird and stressed over a couple months. finally met Anna, quickly good friends,
+    then both realised the were maybe into girls. they kissed, liked it and started dating.
+    after some months (kept it secret), Annas mom figured it out, asked Anna and was very supportive. that gave big sister courgae to tell mom
+
+
+Story:
+------
+
+== Chapter 1 - introduction and setup
+
+=== Day 1
+introduce characters and story, travel to house
+setup character relations
+inspect house, choose rooms.
+briefly look around outside (lake, woods, fields)
+go to bed
+
+Manuscript:
+-----------
+
+...
+[car enters house property]
+
+? Look, there it is.
+? Oh wow, looks pretty big.
+? Yeah.
+m There should be a garage. Drive a bit further up.
+p ...
+  Yep, I see it.
+m Leave your bags for now, lets check it out first.
+
+...
+
+[scene house_first_entry]
+m Well, the lights are working!
+b Ooh, looks pretty fancy.
+l Looks pretty old, if you ask me...
+m That's to be expected, it is quite old. But it certainly would have been fancy in its day.
+p You said it had been renovated, right?
+m Oh yes, it should have full utilities, but also a lot of its original furnishing.
+m Lets explore a bit. Thre should be enough bedrooms for all of us.
+
+[scene kitchen] (start fridge, make sure it's working)
+[scene lounge]
+[scene dinig_room]
+[scene door_leads_to_garage]
+[scene bathroom1]
+[scene bathroom2]
+[scene bathroom3]
+[scene bathroom4]
+[scene bedroom1]
+[scene bedroom2]
+[scene bedroom3]
+[scene bedroom4]
+
+"call bedrooms"
+
+m Alright, everything seem great.
+m Lets go and get all the luggage inside. It's getting pretty late already, so you don't have to unpack everything tonight.
+
+n You all help bringing the luggage inside, and up to your rooms.
+
+[scene player_room]
+[show player with luggage]
+p Phew. Alright, lets do some quick unpacking. 'Gotta find my toothbrush and stuff.
+
+[scene kitchen] (mom is packing food they brought into the fridge)
+p Hey {p_nn_m}. Is the fridge cold yet?
+m Oh, hi {m_nn_p}. Well, not really but it's getting there.
+p Need any help?
+m Uhm, no I'm nearly done already. Thanks any way.
+m Did you unpack your things?
+p Some of it. I'll do the rest tomorrow.
+m Alright
+
+(whem mom is done)
+m There we go. That should last us the next two days.
+m Although I think I might head out and pick up some additional things tomorrow.
+p Oh yeah?
+m There should be a small town about a 40 minutes drive away, and I want to make sure I can find it and see what's there.
+p Do you want us to come with you?
+m Hm, maybe. I might bring one of the girls. I was hoping you could help me set up my computer.
+p Oh, sure. That's no problem.
+m Thanks, honey.
+m Now, I'm going to check in quickly with the girls, but you can go and get ready for bed.
+p Alright. Good night, {p_nn_m}, see you tomorrow.
+m Good night.
+
+(Bathroom, brushing teeth etc?)
+n You change and brush your teeth, then crawl under the covers in the unfamiliar bed, in which you will be spending the nights for the coming three months.
+
+
+
+
+
+Day 2
+Morning, stretch, go to bath room. Knock, mom is in there, so you wait.
+Your turn... Then, go to kitchen, mom is making breakfast (fully clothed), you say good morning.
+Mom asks you to check if the girls are up, breakfast won't be long.
+You check on big sister, knock at her door and enter at the same time. She's up, wearing pyamas and holding underwear. Breakgast... She's just gonna take a shower first. ok.
+Check on little sister, knock and enter, she's awake but still in bed. come one, time to get up. yawns, ok fine... wearing pyamas (long sleeved shirt and trousers)
+
+Breakfast. small talk. mom asks you to help her set up her computer later, so she can start working.
+She also aks the girls to help her with some unpacking. We don't have to do it all, but please help me out a little.
+
+After breakfast, you brush your teeth, then prepare to set up moms computer at work desk.
+You see all girls unpacking stuff. Mom bends over to pick up something, and you see her cleavage and part of her bra, but think nothing of it.
+You carry computer and stuff. Skip to having set it upp. Call for mom that its done.
+Mom thanks you all, and suggests that you all check out the surrounding area.
+
+You all leave together (you and sisters), finding and checking out:
+    - lake, bridge, small boat
+    - woods
+    - field of grass
+    - you find a jacuzzi close to the house, it have seen better days. needs cleaning.
+    
+Later, you come back, go to your room. Lay on bed with your phone for a while.
+
+Later again, dinner everyone together.
+Someone asks mom how the book is coming along. fairly well, she briefly describes the plot she's working on. looking to be a murder mystery (or something else?)
+You mention the jacuzzi, and suggest you should get it cleaned up. Mom asks your sisters to help you. They agree but are not looking frward to it.
+
+Evening, you sit on the couch (watching tv? only basic channels. or, a movie on DVD?)
+Drinking coffee/tea. Playing on phone?
+Then, going to bed...
+
+
+Manuscript:
+-----------
+
+title Next morning
+
+
+
+
+
+
+
+Day 3
+Morning, stretch, go to bath room. Knock, and no reply so you go in. Turns out big sister is there, but with headphones on.
+She is going to shower, bra and panties on the floor or counter, has just removed her pyjama top.
+You see each other, she gets mad, covers her breasts. "WTH <namne>!? Ever heard of fucking knocking? Get out!". You reply, "I did knock!" You back out.
+You go to kitchen and find mom, making breakfast. You help her make the table.
+Big sister comes into kitchen, you go to the bath room but also apologise to big sister. reaction thanks? or attitude whatever!...?
+
+Breakfast
+Player choice? Discuss the jacuzzi. Tell one or both sisters that its fine for them to let you do it? earn some "points"
+Then, you go to clean up the jacuzzi. (on your own or with help)
+    if you clean alone: (gain favour by big sister)(you choose to do it on your own because of big sister incident, and don't want to single out little siter.)
+        once you start, little sister shows up anyway and helps you
+        after you are done, you clean up and relax in the lake with little sister, (after changing into swimming suits))
+    else: when almost done you tell the girls to go take a shower and relax, you can finish the last of it.
+        once you are done, you get into the shower. after shower, you find there are no towels.
+        you call for mom, "where are the towels". "oh, sorry, I put them in the laundry earlier. ask big sister to get you one"
+        you ask big sister for a towel. she is tired and gets a bit annoyed. fine... while you wait in the bathroom, she suddenly bursts into the room with towel
+        "oh, jeez! could have told me you were fucking naked in here". looks away and throw you towel. "Hey, I just showered and had no towel, of course I'd be naked."
+        you repeat what she said to you earlier: "Have YOU ever heard of knocking?". she replies: "yeah, yeah. I guess we're even now (maybe "insult", "Mr. small-dick")
+            "wtf? it's not small, I'm cold, ok!?", (thinking: "fucking weirdo")
+            (she chuckles and steps out, then thinks to self: "fuck, why did I say that, now he thinks I was checking out his dick!?")
+
+at dinner, or evening, talk about jacuzzi: lets fill it up tomorrow and try it out. big enough for us all.
+
+
+
+Day 4
+During breakfast, talk about the jacuzzi again. Player is going to fix the rest, fill with water, get the heaters running etc.
+Ask if everyone want to join. sisters are in, Mom needs to work. Suggests she takes a break. She agrees to join them later, she just needs to finish a few things.
+
+You fix up the rest of jacuzzi, and get it hot. go inside to tell everyone. change into swimming trunks
+you and sisters go out together, they are wearing swimsuits. you get into the jacuzzi and relax, it feels great
+(talk about something?)
+mom joins a bit later (maybe, steps carefully into jacuzzi in such a way that you get a good view of her backside)
+    (possibly: mom wears light swimsuit that becomes slightly seethrough when wet?)
+Talk more about the book? How is it pregressing? Mom has a pretty good ide of the story now...
+
+At evening: You are getting a bit horny, and feel you need to take care of things. you go into your room, luckily you brought some porn on your phone.
+
+
+Day 5, or maybe skip a few days?
+? goes shopping (you and one girl, all of you, two girls?)
+
+
+Same or another day?
+Horny, you need to masturbate again
+
+At breakfast, you catch yourself looking at the girls' tits and cleavage. think to self: "what is wrong with me? stop that."
+Big sister notices you looking, not sure. "did he look at my tits?", later "wtf, he's definately looking at my tits." she adjusts her top a little to show less cleavage
+    player becomes embaressed and looks away, eat breakfast in quiet.
+    
+    
+At later day, repeat breakfast, player looks at tits. big sister notices again. "he's looking at my tits again. what is up with him? fucking weirdo."
+    but she gets a little flush. "fuck. let him watch, what do I care?..."
+
+
+
+
+Chapter 2 - start to notice changes
+e.g. raised sex drive, notice girls more
+e.g. earlier (ch 1) you see cleavage but don't react to it, nor girls. Now, you stare a bit, and girls notice, thinking you're weird and being "mad" at you
+
+
+Chapter 3 - more noticable changes
+e.g. increased penis and balls size, girls larger breasts and more curvy
+you start looking more at the girls, and they are a bit more casual, e.g. nonchalantly pulling aside top to scratch near breast or adjusting breast in bra.
+girls start noticing breast size increase (younger sister asks big sister to borrow bra)
+
+
+Chapter 4 - Flirting and minor encounters
+Almost always horny, difficult to not think about girls
+girls start to become flirty, leaning forward to show cleavage, not wearing bra. small thongs, short skirts
+massages
+little sister borrowing simsuit from big sister or mom. bathing together, talks lead to sexual topics and they end up caressing each other.
+    kissing, touching and licking/sucking breasts.
+masturbating together (either you+girl, or two girls), e.g. lying on their own bed, seeing the other, start masturbate and "pretend not to see each other"
+    (perhaps, sisters doing it together, you happen to walk past and spy on them)
+discard old swimsuit, uses bikinis instead
+go shopping, buy more revealing clothes, possibly sex toys
+applying sun cream, giving "obviously fake" reasons to show off tits, e.g:
+  - Mom: Are my boobs still desirable? What about my but? Please, I need a guy's opinion.
+  - Little sister: Have my boobs grown?
+  - Big sister: Look, I know this is weird, but I couldn't help to notice your dick. It seems big, I want to see it. I'll show you my boobs for it...
+Wearing only bra/panties at home
+"This bra keeps chafing, do you mind if I take it off?" -> being topless at home
+
+
+Chapter 5 - First sexual encounters
+More noticable physical changes. your dick is definately bigger, and your balls. balls always feel full
+girls significantly larger breasts. largely stops wearing bras. sometimes seethrough tops
+Massages leading to sensual touching
+Mom seeing your hard-on and being "concerned", and wanting to help you out
+Similarly, you help out your little sister
+Big sister happened to see mom help you. Later comes into your room at night, wanting to have a go herself (you sleeping).
+    You eventually wake up, and talk big sister into (not very resistant) sitting on your face, 69
+Touching under table during breakfast/dinner or similar
+Big sister starts wearing butt plug, always. She keeps it rather hidden
+Mom keeps "helping you"
+
+
+Chapter 6 - Slowly grow more bold
+You have started to cum unreasonable amounts, several times a day
+Mom reasons that not only is she helping you, but she want it to. She loves your cum, and e.g. you give her cum on her food or in her drinks (morning coffee?). Maybe cum shots?
+Little sister enjoys her now much larger tits, but envies mom's. when alone with mom, aks if you can feel them. start caressing each other. leads to little sister kneeling and eating out mom
+Little sister again wants your opinion on her tits, leading to tit fucking and cumming over her tits and face
+Big sister upgrade to larger butt plug, no longer cares if seen. wears thin thongs, bends over in front of you to show it off
+Again, at night, big sister comes to your room and gently sits on your face and starts sucking you off. When you wake up, you realise the situation and eats her out.
+    she asks you to lick her ass too, because she want you to fuck her ass. she gets up on all four, presents ass hole to you, and you fuck her. you cum in her mouth
+
+
+
+Chapter 7 - 
+You and big sister sneaks off somewhere, and she offers her ass to you. you have sex. Mom comes by and you pretend nothing's up. Mom says "ok" but secretly have a good idea of what you are up to
+    you cum in big sister's ass. she puts her plug back in(?) and walks off, byt mom is waiting on her and asks to see her in her room. "uh, what's up mom?"
+    Moms says, "be honest, did brother just fuck you in ther ass?", big sister a little embaressed but confesses. mom says "let me see". big sis surprised.
+    mom kneels behing her ass, pulls out plug and starts eating your cum out big sister's ass.
+At evening, sitting in couch (you and mom). Mom says that she knows you have had anal sex with big sister. You get nervous and defensive. Mom reasures you, she's not mad. She's happy for you.
+    She asks if you would want to fuck her too? Because her pussy is super wet and want your big cock to fill it up.
+    She straddles you and you have sex
+    
+
+Chapter 8 - 
+Little sister is "playing" with big sister, eating each other out. Little sister aks big sister about real sex. How does it feel etc? She want to try it out, sad that she can't.
+    Big sister suggests that there is a cock in the house. "Yeah, but, its brother. it's a bit too much?". Big sister doesn't think so. Little sister exclaims/asks "What did you and brother have sex!?"
+    Big sister replies, well, yeah, but only anal so far. little sister is surprised.
+You have sex with mom again. She goes to her room, and is eating your cum from her pussy, saying "mmm, his cum is so delicous!". little sister happens to hear it and sees what mom is doing.
+    Little sister later on is talking with you, trying to breach the topic of sex. She asks if you've had sex before, how is it etc? She finally asks if you had sex with mom. you confess.
+    And anal sex with big sister? Again, yes. Little sister mad "So I'm the only have you havn't fucked!?" "Why!? Don't you want to fuck me too?" You say that you do, and you have sex together gently.
+
+
+
+Chapter X - Start to realise something is definately going on
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

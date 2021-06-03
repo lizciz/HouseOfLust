@@ -1,0 +1,92 @@
+
+House of lust settings I should remember
+
+
+Character posing:
+    All characters: Incandenscent PL 010. Remeber to not draw ground or dome.
+    ----------
+    [[First house entry, dark. Use Light Presets "Incandenscent PL 005"]]
+
+
+
+
+Mom
+----------
+Base character: M...
+increased chest size, type 8 (natural hang)
+Golden Palace gens
+Headligh nipples type 4, change to type 1 when horny
+
+    For casual shirt, breasts show through a little. To prevent, change:
+        Areola puffy 0% (was 50%)
+        Nipples 30% (was 0)
+
+
+
+Little sister
+Base character: Ryleigh
+height +10% (positive means shorter)
+slighly decrease in chest size
+makeup: Lipstick: FR Ryleigh MU Lips 07
+        Eye shadow: FR Ryleigh MU 08
+Breasts:
+    Originally:         Breast shape 4 100%, Small breasts 30%
+    At biggest size:    Breast shape 18 60%, (Realistic) Breast Size 20%
+    
+    
+    
+    
+    
+    
+
+Big sister
+Base character: Natasha
+    Breasts
+        With workout clothes:   Remove Headlights, optionally
+                                Breast Up/Down adjust 20% (normally 0%)
+                                Breast Top Curve -50% (normally 0%)
+                                Squish Breasts 20% (normally 0%)
+                                Areola perk 0%  (normally 50%)
+                                
+                                
+
+
+Player
+Base character: Vini
+Default uses "starting" dick size.
+For dick color, use Dicktator shell color script. change default (255,255,255) to (230,255,235). I.e. lower red and blue slightly
+Pubic hair is Mike1954's for Dicktator, black but change "Diffuse color" to [42, 17, 3] (dark brown)
+                                        and set custom opacity filter "less-cut1.jpg"
+When flaccid, modify:   Glans scale 2.19% (was 22.19, so -20)
+                        Foreskin Forward 0.75 (was 0)
+                        Foreskin Rim Scale 1 20% (was 0)
+                        Flacid Preset 1 50% (which also increases Flacid Preset Base to 50%)
+                        Flacid Preset Base 100% (+50)
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

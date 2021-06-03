@@ -1,0 +1,39 @@
+Looking for writer
+
+Hi,
+
+I've started developing an adult game, purely as a hobby, and am looking for someone to help with the writing. It is a visual novel, developed using Renpy, with 3D renders for visuals. I'm an experienced programmer, but rather new to this type of development and 3D rendering. Nevertheless, I'm fine with taking care of all rendering and coding. Where I'm looking for help is with story development and writing. See below for details and more about the game, including a "demo".
+
+[Important!] The story involves incestuous relationships, so if that is not your thing you might want to stop reading here.
+
+[Important!] I want to be up-front with that this is not a paid position. I am not looking to make money off this. I already have a full-time job which takes up most of my time and this project is purely a hobby of mine, which I hope to one day be able to publish and share with others.
+
+What I'm looking for:
+
+Since I have a full-time job, I typically devote only a couple of hours per week to this project. Thus, for anyone that might be interested, I will not put high demands or strict deadlines on you. Rather, I'm looking for someone with similar interests that can see this project as a hobby to work on occasionally.
+
+I want to find someone with whom I can brainstorm ideas and have discussions to further develop the story and help with writing. Thus, you will have significant impact on how the story develops. If you enjoy writing but don't want to get involved with coding or 3D rendering, this might be a good fit for you. All writing will be in english.
+
+About the game:
+
+(All current development is to be seen as preliminary, and may change in the future.)
+The story surrounds a family of four; a mother and three children (all age 18+). The mother is a writer and gets an opportunity through her publisher to live in an old secluded house/mansion out in the country over summer while working on her next book. They decide to make it a family vacation so they all spend 3 months of summer there. Unbeknownst to everyone, the house has a strange aura/power that slowly over time affects their minds and bodies to increase sexual tendencies and lust. Certain body parts increase in size and it becomes harder to ignore their sexual selves. Eventuallty the taboo line between family is stretched thin, and the risk of crossing it seems ever more alluring.
+
+Primary characters are:
+Melinda (mother)
+Jolie (big sister)
+Stephen (player)
+Amanda (little sister)
+
+Names and relations can be configured by editing a source file, in case you want to change "mom" to "land lady" or something.
+
+Demo:
+
+I have started development already, and can showcase a tiny demo. Although, I don't really like calling it a "demo" at this stage. Rather, look at it as a very early prototype that I've put together just to try things out. The total content thus far is only a couple of minutes long.
+
+If you are interested please just reply in this thread or DM me.
+
+https://mega.nz/folder/yUlEwAxA#9wZ7RE7aJoXqm71NLOfzoQ
+
+
+I will set up some more permanent solution for communication as needed (e.g. Discord), but I don't know what kind of response, if any, to expect from this. So, for now, if you are interested please just reply in this thread or DM me.
