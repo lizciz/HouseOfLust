@@ -1,5 +1,6 @@
 House of Lust
-(Further development of Comics.txt #4)
+
+This is a rough planning document. Things may change once they are implemented.
 
 
 Abstract:
@@ -31,6 +32,7 @@ Build with Ren'py. In general, use background images and "scene" images, with ch
 Special scenes rendered in fullscreen, with characters included, or possibly characters and foreground objects, still on top of background.
 
 Seperate dialog files? Easier for translations. Look into how it's done.
+    -> Turns out Renpy has built-in translation support
 
 Visual novel, with dialog choices, branching story?
 Alt: Character development simular to Mass effect/Dragon Age, where options gives you stacks of character traints, e.g. "funny", "serious", "caring" etc. and some dialog are chosen based on those stats. This could make it feel more personalized, but not require much (any) story branches.
@@ -49,10 +51,10 @@ define characters' names, titles, relations and nick names
 format: x_y where x is character identifier (same as above) and y is one of:
 
     n - name
-    ns - name (ägande form), i.e. including suffix 's
-    t - title
+    ns - name (ägande form), i.e. including suffix 's, e.g. "Mike" vs "Mike's"
+    t - title ?
     r_m - relation to m, where m is an identifier
-    nn_m - what m normally calls this person, where m is an identifier
+    nn_m - nickname, what m normally calls this person, where m is an identifier
     ln - last name
 
 So, e.g. for mom:
@@ -101,7 +103,7 @@ Little sister, 18 years old. similar interests as player (mathematics? biology? 
 
 
 
-Events:
+Events: (random ideas for events that could take place?)
 -------
 
 You prepared by having some porn on your phone, since there is no internet.
