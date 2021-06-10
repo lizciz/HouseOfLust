@@ -6,9 +6,13 @@
 define n2 = Character("Narrator")
 
 define m = Character("[p_nn_m!c]", color="#ffe169")
+define mt = Character("[p_nn_m!c]", color="#ffe169", what_prefix = "{i}", what_suffix = "{/i}")
 define b = Character("[p_nn_b!c]", color="#cf3723")
+define bt = Character("[p_nn_b!c]", color="#cf3723", what_prefix = "{i}", what_suffix = "{/i}")
 define l = Character("[p_nn_l!c]", color="#e072ce")
+define lt = Character("[p_nn_l!c]", color="#e072ce", what_prefix = "{i}", what_suffix = "{/i}")
 define p = Character(p_n, color="#5879cc")
+define pt = Character(p_n, color="#5879cc", what_prefix = "{i}", what_suffix = "{/i}")
 
 transform centerleft:
     xalign .35 yalign 1.0
@@ -310,7 +314,7 @@ label day01:
     p "Oh yeah?"
     m "Yes. There should be a small town about a 40 minutes drive away, and I want to make sure I can find it and see what's there."
     p "Do you want us to come with you?"
-    m "Hm, maybe. I might bring one of the girls. I was hoping you could help me set up my computer."
+    m "Hm, maybe. I might bring one of the girls. I was hoping you could help me set up my laptop."
     p "Oh, sure. That's no problem."
     m "Thanks, honey."
     m "Now, I'm going to check in quickly with the girls, but you can go and get ready for bed."
@@ -419,28 +423,180 @@ label day02:
     "After a short while, the whole family is gathered in the kitchen for breakfast."
 
     scene house kitchen_table day
-    show kitchen_table nochairs empty
-    show mom eating_in_kitchen
-    show bigsister eating_in_kitchen
-    show littlesister eating_in_kitchen
-    show player eating_in_kitchen
-    show kitchen_table_breakfast
+    $ kitchen_table_setup([], {
+        "c1":"mom eating_in_kitchen",
+        "c2":"bigsister eating_in_kitchen",
+        "c3":"littlesister eating_in_kitchen",
+        "c4":"player eating_in_kitchen",
+        "ontop":"kitchen_table_breakfast"
+    })
 
-    "... Small talk ..."
+    "You all engage in some small talk while eating."
+    # m "So, how do you like the place so far?"
+    p "It looks like it's going to be a nice day today. We should check everything outside the house and the surounding area."
+    b "Yeah, fur sure!"
+    l "Count me in."
+    m "Yes, we definitely should. But there are a few things we need to take care of first."
+    m "After breakfast, we really should go and unpack, for starters. You can all unpack your own things, and then I was thinking of going to the nearby town and do some grocery shopping while you guys unpack the rest."
+    b "Sure [b_nn_m], we can do that."
+    p "Yeah, no problem."
+    m  "Oh, actually, I would appreciate if one of you can come with me, girls? To help with the shopping."
+    m "Would you mind [m_nn_l]? [m_nn_b] is good at organizing so she should probably do the unpacking."
+    l "Uhm, yeah, I guess."
+
+    menu:
+        "Yeah, [b_n] should help with unpacking.":
+            $ c001_unpacking = "b" # remeber that b stays home to unpack
+            "[b_n] stays with you, [l_n] goes shopping."
+            "TODO"
+            p "Yeah. [p_nn_b], you will know where stuff should go. You can organize everything and I'll help out."
+            b "Sure, fine by me."
+
+        "It's fine, me and [l_n] can handle the unpacking.":
+            $ c001_unpacking = "l" # remeber that l stays home to unpack
+            "[l_n] stays with you, [b_n] goes shopping."
+            "TODO"
+            p "Don't worry [p_nn_m]. Me and [p_nn_l] can handle the unpacking if she wants to stay here and [p_nn_b] want to go shopping."
+            m "Are you sure?"
+            l "Of course, [l_nn_m]."
+            m "Is that ok for you too [b_n]?"
+            b "Sure! I don't mind going shopping."
+            m "Well alright then."
+    
+    m "And [p_n], once you're done unpacking, please set up my laptop for me, will you?"
+    p "Yeah of course."
+    m "Thanks. I have it up in my room."
+    b "When you are back and everything is done we could check out the area together."
+
+    # Note. Initially, I was thinking of having a stationary laptop, thus m needing help to install everything.
+    # However, there is no good place in the house to place it. So rather, I'll make it a laptop and build into the
+    # story that it is a brand new laptop that the publishers paid for, and m needs help with the initial setup.
+    # She normally uses a stationary laptop at home, and is not very tech savy.
+
+    m ""
+    # bring up:
+    # - player setting up moms laptop
+    # - one of the girls going shopping with mom
+    # - help with unpacking. perhaps the girl that doesn't go with mom shopping? or both before or after shopping
+    # - plans to go outside and check the area
+
+    scene black
+    "After breakfast, it's time for you all to start unpacking."
+
+    scene house kitchen_table day
+    $ kitchen_table_setup(["c1", "c2"])
+    show mom casual at center:
+        zoom .5
+    show player casual at left:
+        zoom .5
+
+    m "[p_n]?"
+    p "Yes?"
+    m "Before you go, would you mind carrying the last few bags and boxes in the hallway up to my room?"
+    p "Nope, I don't mind."
+    m "Thanks, honey. They're not that heavy, just a bit cumbersome, and I think you'll handle the stairs betters than me."
+
+    scene black
+    "While the others go to their rooms and starts unpacking, you carry the remaining luggage upstairs."
+    "They are indeed rather cumbersome, so you have to carry them one at a time."
+    "After a couple of trips, you finally bring the last box to [p_nn_ms] room."
+
+    scene house master_bedroom day
+    show mom casual at centerleft:
+        zoom .5
+    show player casual carrying_box at right:
+        zoom .5
+    p "Ok [p_nn_m], this is the last one."
+    m "Thanks [p_n], you're an angel."
+    p "You're welcome. I'll go and unpack now."
+    
+
+    scene house spare_bedroom day
+    show player casual at center:
+        zoom .5
+
+    "You go to you room and start unpacking your bags. Unlike [p3_ref_bl], you don't have that much to unpack, so you're finished in just shy of 15 minutes."
+    p "Ok, that should do it."
+    if c001_unpacking == "b":
+        $ c001_n = b_n
+        $ c001_nn = p_nn_b
+    elif c001_unpacking == "l":
+        $ c001_n = l_n
+        $ c001_nn = p_nn_l
+    p "Hm."
+    p "I'll wait for [c001_nn] to finish before we start unpacking all the other things."
+    p "I guess I can start setting up [p_nn_ms] laptop in the mean time."
+
+    scene house stairs
+    "You head back to [p_nn_ms] room to pick up her laptop."
+
+    scene house master_bedroom day
+    #$ renpy.pause(.5)
+    show player casual at right:
+        zoom .5
+    p "Hey [p_nn_m], I'm done and thought I'd start setting up ... Uhm..."
+    show mom casual underwear back at centerleft:
+        zoom .5
+    m "Oh, [p_n]? I'm kind of changing in here."
+    show player casual embaressed at right:
+        zoom .5
+    p "I, can see that. Sorry!"
+    show mom casual underwear front at centerleft:
+        zoom .5
+    m "Don't worry about it. What did you want?"
+    p "Oh, I... thought I could start working on your laptop?"
+    m "Ah, great! Are you done unpacking already?"
+    p "I'm done with my own things, yeah. I'm just waiting for [c001_n] to finish hers before we start on the rest."
+    m "Ok, good. I'll get it for you."
+    # add intermediate character pose where m is bending over, picking up laptop, and handing it over?
+    # possible dialogue if so: I'm done unpacking too. I was just going to change into something else before going shopping.
+    m "Here you go, honey."
+    p "Thanks."
+    p "..."
+    p "So... I'll, get to it then."
+    hide player
+    m "Thank yooouuu!"
+    mt "..."
+    mt "Hehe. That's what he gets for not knocking."
+    mt "I don't really mind him seeing me in my underwear, he's seen me in a swimsuit before any way."
+    mt "But I know what guys his age are like, and I could definitely tell he was embaressed!"
+    show mom casual underwear back at centerleft:
+        zoom .5
+    mt "He should try to find another girl friend *shuckle*."
+    mt "Although, it'll have to be after summer. I doupt he'll meet someone out here."
+    mt "..."
+
+    scene house stairs
+    show player casual embaressed at center:
+        zoom .5
+    pt "Okaaayy... That was awkward."
+    
+    scene house kitchen_table day
+    $ kitchen_table_setup(["c2", "table", "c1"], {"c1":"player laptop_at_kitchen working"})
+
+    "Kitchen stuff."
 
     
+    # Idea: After breakfast, time to unpack. m asks player to carry a few remaining bags to her room.
+    # p makes a few round trips, and gets to see m's suit cases and clothes layed out on the bed.
+    # then p starts unpacking his stuff. when done,he goes back into m's room (why? maybe to bathroom? taking shower?)
+    # and sees m undressing. she has her top off, wearing bra, half turned away.
+    # nothing much comes from it, but makes a nice comparison point for future events to see how much has changed
+
+
+
     # Morning, stretch, go to bath room. Knock, mom is in there, so you wait.
     # Your turn... Then, go to kitchen, mom is making breakfast (fully clothed), you say good morning.
     # Mom asks you to check if the girls are up, breakfast won't be long.
     # You check on big sister, knock at her door and enter at the same time. She's up, wearing pyamas and holding underwear. Breakfast... She's just gonna take a shower first. ok.
     # Check on little sister, knock and enter, she's awake but still in bed. come one, time to get up. yawns, ok fine... wearing pyamas (long sleeved shirt and trousers)
 
-    # Breakfast. small talk. mom asks you to help her set up her computer later, so she can start working.
+    # Breakfast. small talk. mom asks you to help her set up her laptop later, so she can start working.
     # She also asks the girls to help her with some unpacking. We don't have to do it all, but please help me out a little.
 
-    # After breakfast, you brush your teeth, then prepare to set up moms computer at work desk.
+    # After breakfast, you brush your teeth, then prepare to set up moms laptop at work desk.
     # You see all girls unpacking stuff. Mom bends over to pick up something, and you see her cleavage and part of her bra, but think nothing of it.
-    # You carry computer and stuff. Skip to having set it upp. Call for mom that its done.
+    # You carry laptop and stuff. Skip to having set it upp. Call for mom that its done.
     # Mom thanks you all, and suggests that you all check out the surrounding area.
 
     # You all leave together (you and sisters), finding and checking out:
@@ -453,7 +609,7 @@ label day02:
 
     # Later again, dinner everyone together.
     # Someone asks mom how the book is coming along. fairly well, she briefly describes the plot she's working on. looking to be a murder mystery (or something else?)
-    # You mention the jacuzzi, and suggest you should get it cleaned up. Mom asks your sisters to help you. They agree but are not looking frward to it.
+    # You mention the jacuzzi, and suggest you should get it cleaned up. Mom asks your sisters to help you. They agree but are not looking forward to it.
 
     # Evening, you sit on the couch (watching tv? only basic channels. or, a movie on DVD?)
     # Drinking coffee/tea. Playing on phone?

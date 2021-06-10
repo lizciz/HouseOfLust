@@ -8,3 +8,5 @@ saves
 
 # Renpy files generated during runs
 log.txt
+errors.txt
+traceback.txt
