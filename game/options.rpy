@@ -110,8 +110,8 @@ define config.window = "auto"
 
 ## Transitions used to show and hide the dialogue window
 
-define config.window_show_transition = Fade(0.0, 0.2, 0.5, color="#000") #Dissolve(.2)
-define config.window_hide_transition = Fade(0.5, 0.2, 0.0, color="#000") #Dissolve(.2)
+define config.window_show_transition = Dissolve(.2) #Fade(0.0, 0.2, 0.5, color="#000") #Dissolve(.2)
+define config.window_hide_transition = Dissolve(.2) #Fade(0.5, 0.2, 0.0, color="#000") #Dissolve(.2)
 
 
 ## Preference defaults #########################################################

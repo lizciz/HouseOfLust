@@ -26,7 +26,7 @@ transform centerright:
 
 
 # The game starts here.
-
+label start:
 label day01:
 
     # Show a background. This uses a placeholder by default, but you can
@@ -53,20 +53,20 @@ label day01:
 
     scene house hallway first_entry
 
-    show mom casual at right:
+    show mom casual at right with dissolve:
         zoom 0.5
     m "Well, the lights are working!"
 
-    show bigsister casual at left:
+    show bigsister casual at left with dissolve:
         zoom 0.5
     b "Ooh, looks pretty fancy."
 
-    show littlesister casual at centerleft:
+    show littlesister casual at centerleft with dissolve:
         zoom 0.5
     l "Looks pretty old, if you ask me..."
     m "That's to be expected, it is quite old. But it certainly would have been fancy in its day."
 
-    show player casual at centerright:
+    show player casual at centerright with dissolve:
         zoom 0.5
     p "You said it had been renovated, right?"
     m "Oh yes, it should have full utilities, but also a lot of its original furnishing."
@@ -76,24 +76,24 @@ label day01:
     scene house dining_room night
     $ renpy.pause()
 
-    show bigsister casual at right:
+    show bigsister casual at right with dissolve:
         zoom 0.5
     b "Hm, nice."
-    show player casual at left:
+    show player casual at left with dissolve:
         zoom 0.5
     p "If this is the dining room, I'd guess that the kitchen is close by."
 
     scene house kitchen night
     $ renpy.pause()
     
-    show littlesister casual at left:
+    show littlesister casual at left with dissolve:
         zoom 0.5
     l "Ugh, I thought you said it was renovated?"
-    show mom casual at right:
+    show mom casual at right with dissolve:
         zoom 0.5
     m "Well, yes, some of it should be. But as I said, a lot of the original furnishing was kept."
     m "I'm sure it will be fine."
-    show player casual at centerright:
+    show player casual at centerright with dissolve:
         zoom 0.5
     p "We should probably check that the fridge works."
     m "Ah, good idea!"
@@ -103,39 +103,39 @@ label day01:
     "Theres a power switch that has been turned off. You turn it on and the fridge springs to life."
 
     scene house kitchen night
-    show player casual at centerleft:
+    show player casual at centerleft with dissolve:
         zoom 0.5
     p "Seems to be working."
-    show mom casual at centerright:
+    show mom casual at centerright with dissolve:
         zoom 0.5
     m "Let's give it some time get cold."
 
-    show littlesister casual at left:
+    show littlesister casual at left with dissolve:
         zoom 0.5
     l "There's a room through here."
 
     scene house lounge night
     $ renpy.pause()
 
-    show mom casual at right:
+    show mom casual at right with dissolve:
         zoom 0.5
     m "Ooh, a lounge. It has a fire place, and even an old TV."
-    show bigsister casual at centerright:
+    show bigsister casual at centerright with dissolve:
         zoom 0.5
     b "Yeah, really old."
-    show player casual at centerleft:
+    show player casual at centerleft with dissolve:
         zoom 0.5
     p "It's probably just for decoration at this point. I doupt it works."
     #m "Let's keep going."
 
     scene house kitchen night
-    show bigsister casual at right:
+    show bigsister casual at right with dissolve:
         zoom 0.5
     b "There's another door here. Let's see where it leads."
 
     scene house lower_bathroom
     $ renpy.pause()
-    show bigsister casual at left:
+    show bigsister casual at left with dissolve:
         zoom .5
     b "Ah, there's a bathroom here. Pretty small."
     extend "\nOh, and there's no lock on the door."
@@ -143,10 +143,10 @@ label day01:
 
     scene house garage night
     $ renpy.pause()
-    show player casual at left:
+    show player casual at left with dissolve:
         zoom 0.5
     p "There's a door to the garage here. That's pretty neat."
-    show mom casual at centerright:
+    show mom casual at centerright with dissolve:
         zoom 0.5
     m "Oh, good. Then we don't need to run back and forth through the front door when we bring in our bags."
     m "I think that's everything on the first floor. Let's go and check the upstairs."
@@ -156,16 +156,16 @@ label day01:
 
     scene house stairs
     $ renpy.pause()
-    show player casual at centerright:
+    show player casual at centerright with dissolve:
         zoom 0.5
     p "Ok, plenty of doors to choose from."
     p "Let's start here..."
     scene house main_upper_bathroom # door straight ahead from stairs (corner bathroom)
     $ renpy.pause()
-    show player casual at centerright:
+    show player casual at centerright with dissolve:
         zoom 0.5
     p "Another bathroom. A bit bigger, but still pretty sparse."
-    show bigsister casual at right:
+    show bigsister casual at right with dissolve:
         zoom 0.5
     b "Does it have a lock?"
     p "Uhm, nope."
@@ -174,16 +174,16 @@ label day01:
 
     l "There's a bedroom here."
     scene house spare_bedroom night # door to the rights from stairs
-    show littlesister casual at left:
+    show littlesister casual at left with dissolve:
         zoom 0.5
     l "It doesn't look half bad, actually."
-    show mom casual at center:
+    show mom casual at center with dissolve:
         zoom 0.5
     m "No, it looks nice."
 
     scene house master_bedroom night # left of stairs
     $ renpy.pause()
-    show bigsister casual at right:
+    show bigsister casual at right with dissolve:
         zoom 0.5
     b "Another bedroom here!"
     b "A bit bigger, and theres two more doors."
@@ -192,21 +192,21 @@ label day01:
 
     scene house master_bathroom view1 # from master bedroom
     $ renpy.pause()
-    show player casual at left:
+    show player casual at left with dissolve:
         zoom 0.5
     p "The second one is a bathroom. This must have been part of the renovation, 'cause it looks pretty nice."
-    show littlesister casual at right:
+    show littlesister casual at right with dissolve:
         zoom 0.5
     l "That's a relief. At least I can have a nice shower or a bath."
 
     scene house master_bedroom night
-    show mom casual at right:
+    show mom casual at right with dissolve:
         zoom 0.5
     m "This must have been the master bedroom and bathroom."
-    show littlesister casual at left:
+    show littlesister casual at left with dissolve:
         zoom 0.5
     l "I call dibs on this room!"
-    show bigsister casual at centerleft:
+    show bigsister casual at centerleft with dissolve:
         zoom 0.5
     b "You can't call dibs an the best room."
     l "I just did! [l_nn_m!cl], can I have this room?"
@@ -218,24 +218,24 @@ label day01:
 
     scene house small_spare_bedroom night #next door on right side"
     $ renpy.pause()
-    show player casual at left:
+    show player casual at left with dissolve:
         zoom 0.5
     p "Another bedroom in here. A bit smaller than the first, and a single bed rather than double."
-    show mom casual at centerright:
+    show mom casual at centerright with dissolve:
         zoom 0.5
     m "There's a nice wardrobe here, though. Plenty of space to hang clothes. I think the first room only had a dresser with drawers."
     m "Maybe you'd like this room, [l_n]?"
-    show littlesister casual at centerleft:
+    show littlesister casual at centerleft with dissolve:
         zoom 0.5
     l "I guess."
     p "Ok, next room."
 
     scene house child_bedroom night # next door on left side
     $ renpy.pause()
-    show bigsister casual at left:
+    show bigsister casual at left with dissolve:
         zoom 0.5
     b "Great, another bedroom. That means we each get our own room!"
-    show mom casual at right:
+    show mom casual at right with dissolve:
         zoom 0.5
     m "Yes, that's perfect."
     b "There's two beds in here. Not that it matters, though. And there's also a wardrobe."
@@ -243,24 +243,24 @@ label day01:
 
     scene house small_upper_bathroom #door straight ahead down the hall
     $ renpy.pause()
-    show player casual at right:
+    show player casual at right with dissolve:
         zoom 0.5
     p "Ah, another bathroom."
     p "Just a toilet here as well, and no shower. At least we won't have to fight for access to the toilets."
     "You go back to the others in the hallway."
 
     scene house stairs
-    show player casual at left:
+    show player casual at left with dissolve:
         zoom 0.5
     p "There's one more bathroom down the hall. Just another small one, no shower."
-    show mom casual at right:
+    show mom casual at right with dissolve:
         zoom 0.5
     m "Ok, good. Then, let's decide on which bedrooms you all want."
-    show littlesister casual at centerright:
+    show littlesister casual at centerright with dissolve:
         zoom 0.5
     l "I'd like the one with the big wardrobe."
     p "I don't mind either way, they all look fine to me."
-    show bigsister casual at centerleft:
+    show bigsister casual at centerleft with dissolve:
         zoom 0.5
     b "Well, I'd like the double bed, but I think I'd rather have some wardrobe space. So, I guess I'll take the one with two beds."
     p "I'll have the double bed then."
@@ -274,7 +274,7 @@ label day01:
     #[scene player_room]
     #[show player with luggage]
     scene house spare_bedroom night
-    show player casual at centerright:
+    show player casual at centerright with dissolve:
         zoom 0.5
     p "Phew. That's everything..."
     p "..."
@@ -285,20 +285,20 @@ label day01:
     "Once you're done, you go to check up on the others."
 
     scene house kitchen night # (mom is packing the food they brought into the fridge)
-    show mom casual backside bending at left:
+    show mom casual backside bending at left with dissolve:
         zoom 0.5
     "You find your [m_r_p] in the kitchen putting away the food you brought with you in the fridge."
 
-    show player casual at centerright:
+    show player casual at centerright with dissolve:
         zoom 0.5
     p "Hey [p_nn_m]. Is the fridge cold yet?"
 
-    show mom casual at left:
+    show mom casual at left with dissolve:
         zoom 0.5
     m "Oh, hi [m_nn_p]. Well, not really but it's getting there."
     p "Need any help?"
     m "Uhm, no I'm nearly done already. Thanks any way."
-    show mom casual backside bending at left:
+    show mom casual backside bending at left with dissolve:
         zoom 0.5
     p "Sure."
     m "Did you unpack your things?"
@@ -307,7 +307,7 @@ label day01:
 
     "[p_nn_m!c] finishes putting the food away in the fridge."
 
-    show mom casual at left:
+    show mom casual at left with dissolve:
         zoom 0.5
     m "There we go, all done."
     m "We should have enough food to last us the next two days. Although I think I might head out and pick up some additional things tomorrow."
@@ -339,10 +339,10 @@ label day02:
     "Then you go downstairs."
     scene house kitchen day
     $ renpy.pause()
-    show mom casual at centerleft:
+    show mom casual at centerleft with dissolve:
         zoom 0.5
     "You find [p_nn_m] in the kitchen, making breakfast."
-    show player casual at centerright:
+    show player casual at centerright with dissolve:
         zoom .5
     p "Good morning."
     m "Oh, good morning, honey!"
@@ -362,14 +362,14 @@ label day02:
     "You head upstairs, and to [p_nn_bs] room."
     "You pull the handle and knock on the door as it swings upen."
     scene house child_bedroom day
-    show player casual at centerright:
+    show player casual at centerright with dissolve:
         zoom .5
     p "Hey [p_nn_b], you up?"
-    show bigsister payama holding_underwear at left:
+    show bigsister payama holding_underwear at left with dissolve:
         zoom .5
     b "Oh, Jesus! You scared me, [b_nn_p]."
     p "Oh, sorry."
-    show bigsister payama at left:
+    show bigsister payama at left with dissolve:
         zoom .5
     b "Yeah, I just got up. Watcha' want?"
     p "[p_nn_m!c] asked me to get you, she's making breakfast."
@@ -383,7 +383,7 @@ label day02:
     "You again open the door and knock as you enter."
     scene house small_spare_bedroom day
     show littlesister sleeping
-    show player casual at left:
+    show player casual at left with dissolve:
         zoom .5
     p "[p_nn_l], are you... up?"
     p "*sigh* I guess not."
@@ -409,8 +409,8 @@ label day02:
     "You pull off her covers and grab her arm to pull her up."
     l "Alright, alright. I'm getting up."
 
-    show littlesister emptybed
-    show littlesister payama sleepy as s1 at centerright:
+    show littlesister emptybed with dissolve
+    show littlesister payama sleepy as s1 at centerright with dissolve:
         zoom .5
     l "*Yawn* ..."
     p "Tired as always, eh? Did you at least sleep ok?"
@@ -444,16 +444,26 @@ label day02:
     m "Would you mind [m_nn_l]? [m_nn_b] is good at organizing so she should probably do the unpacking."
     l "Uhm, yeah, I guess."
 
+    # Abstract this at a later point, e.g. to a class, when it becomes clearer how it can be useful
+    $ c001_b = { "name":b_n, "nickname":p_nn_b, "file":"bigsister" }
+    $ c001_l = { "name":l_n, "nickname":p_nn_l, "file":"littlesister" }
+
     menu:
         "Yeah, [b_n] should help with unpacking.":
-            $ c001_unpacking = "b" # remeber that b stays home to unpack
+            # remeber that b stays home to unpack, l goes shopping
+            $ c001_home = c001_b
+            $ c001_shop = c001_l
+
             "[b_n] stays with you, [l_n] goes shopping."
             "TODO"
             p "Yeah. [p_nn_b], you will know where stuff should go. You can organize everything and I'll help out."
             b "Sure, fine by me."
 
         "It's fine, me and [l_n] can handle the unpacking.":
-            $ c001_unpacking = "l" # remeber that l stays home to unpack
+            # remeber that l stays home to unpack, b goes shopping
+            $ c001_home = c001_l
+            $ c001_shop = c001_b
+
             "[l_n] stays with you, [b_n] goes shopping."
             "TODO"
             p "Don't worry [p_nn_m]. Me and [p_nn_l] can handle the unpacking if she wants to stay here and [p_nn_b] want to go shopping."
@@ -485,9 +495,9 @@ label day02:
 
     scene house kitchen_table day
     $ kitchen_table_setup(["c1", "c2"])
-    show mom casual at center:
+    show mom casual at center with dissolve:
         zoom .5
-    show player casual at left:
+    show player casual at left with dissolve:
         zoom .5
 
     m "[p_n]?"
@@ -504,7 +514,7 @@ label day02:
     scene house master_bedroom day
     show mom casual at centerleft:
         zoom .5
-    show player casual carrying_box at right:
+    show player casual carrying_box at right with dissolve:
         zoom .5
     p "Ok [p_nn_m], this is the last one."
     m "Thanks [p_n], you're an angel."
@@ -512,19 +522,13 @@ label day02:
     
 
     scene house spare_bedroom day
-    show player casual at center:
+    show player casual at center with dissolve:
         zoom .5
 
     "You go to you room and start unpacking your bags. Unlike [p3_ref_bl], you don't have that much to unpack, so you're finished in just shy of 15 minutes."
     p "Ok, that should do it."
-    if c001_unpacking == "b":
-        $ c001_n = b_n
-        $ c001_nn = p_nn_b
-    elif c001_unpacking == "l":
-        $ c001_n = l_n
-        $ c001_nn = p_nn_l
     p "Hm."
-    p "I'll wait for [c001_nn] to finish before we start unpacking all the other things."
+    p "I'll wait for [c001_home[nickname]] to finish before we start unpacking all the other things."
     p "I guess I can start setting up [p_nn_ms] laptop in the mean time."
 
     scene house stairs
@@ -532,47 +536,75 @@ label day02:
 
     scene house master_bedroom day
     #$ renpy.pause(.5)
-    show player casual at right:
+    show player casual at right with dissolve:
         zoom .5
     p "Hey [p_nn_m], I'm done and thought I'd start setting up ... Uhm..."
-    show mom casual underwear back at centerleft:
+    show mom casual underwear back at centerleft with dissolve:
         zoom .5
     m "Oh, [p_n]? I'm kind of changing in here."
-    show player casual embaressed at right:
+    show player casual embaressed at right with dissolve:
         zoom .5
     p "I, can see that. Sorry!"
-    show mom casual underwear front at centerleft:
+    show mom casual underwear front at centerleft with dissolve:
         zoom .5
     m "Don't worry about it. What did you want?"
     p "Oh, I... thought I could start working on your laptop?"
     m "Ah, great! Are you done unpacking already?"
-    p "I'm done with my own things, yeah. I'm just waiting for [c001_n] to finish hers before we start on the rest."
+    p "I'm done with my own things, yeah. I'm just waiting for [c001_home[name]] to finish hers before we start on the rest."
     m "Ok, good. I'll get it for you."
+
     # add intermediate character pose where m is bending over, picking up laptop, and handing it over?
     # possible dialogue if so: I'm done unpacking too. I was just going to change into something else before going shopping.
+    show mom casual underwear find_laptop at center with dissolve:
+        zoom 1.0
+    $ renpy.pause()
+    "..."
+    show mom casual underwear give_laptop with dissolve
+
     m "Here you go, honey."
     p "Thanks."
+    show mom casual underwear front at centerleft with dissolve:
+        zoom .5
     p "..."
     p "So... I'll, get to it then."
-    hide player
+    hide player with dissolve
     m "Thank yooouuu!"
     mt "..."
     mt "Hehe. That's what he gets for not knocking."
     mt "I don't really mind him seeing me in my underwear, he's seen me in a swimsuit before any way."
     mt "But I know what guys his age are like, and I could definitely tell he was embaressed!"
-    show mom casual underwear back at centerleft:
+    show mom casual underwear back at centerleft with dissolve:
         zoom .5
     mt "He should try to find another girl friend *shuckle*."
     mt "Although, it'll have to be after summer. I doupt he'll meet someone out here."
     mt "..."
 
     scene house stairs
-    show player casual embaressed at center:
+    show player casual embaressed at center with dissolve:
         zoom .5
     pt "Okaaayy... That was awkward."
     
     scene house kitchen_table day
     $ kitchen_table_setup(["c2", "table", "c1"], {"c1":"player laptop_at_kitchen working"})
+    "You boot up [p_nn_ms] laptop, and go through the inital setup process."
+    "[p_nn_m!c] is what you'd like to call technologically inept, as least when it comes to computers."
+    "She often runs into problems doing the most basic things. Luckily, you're able to offer her pretty much 24/7 tech support."
+    "She can handle her phone fairly well, which demonstrates that she's able to handle such things if she just spends some time with it, but never had any interest in using computers for anything other than work."
+    "Which means, she can handle word processors, email and simple internet searches."
+    "So, you deactivate several features and services that she has no need for, setup the apps that she's used to, and try to make it look as close as possible to her computer at home."
+
+    show mom casual2 at right with dissolve:
+        zoom .5
+    $ renpy.pause(0.2)
+    show littlesister casual at centerleft with dissolve:
+        zoom .5
+    $ renpy.pause(0.2)
+    show bigsister casual at left with dissolve:
+        zoom .5
+    $ renpy.pause(0.2)
+
+    m ""
+    $ kitchen_table_setup(["c2", "table", "c1"], {"c1":"player laptop_at_kitchen talking"})
 
     "Kitchen stuff."
 
