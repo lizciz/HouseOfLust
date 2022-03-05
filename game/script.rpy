@@ -451,6 +451,7 @@ label day02:
     menu:
         "Yeah, [b_n] should help with unpacking.":
             # remeber that b stays home to unpack, l goes shopping
+            $ c001 = 'b'
             $ c001_home = c001_b
             $ c001_shop = c001_l
 
@@ -461,6 +462,7 @@ label day02:
 
         "It's fine, me and [l_n] can handle the unpacking.":
             # remeber that l stays home to unpack, b goes shopping
+            $ c001 = 'l'
             $ c001_home = c001_l
             $ c001_shop = c001_b
 
@@ -603,7 +605,8 @@ label day02:
         zoom .5
     $ renpy.pause(0.2)
 
-    m ""
+    m "Okay, [c001_shop_n] and I are ready to go now. We'll be at least a couple of hours."
+
     $ kitchen_table_setup(["c2", "table", "c1"], {"c1":"player laptop_at_kitchen talking"})
 
     "Kitchen stuff."
