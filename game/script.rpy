@@ -433,14 +433,14 @@ label day02:
 
     "You all engage in some small talk while eating."
     # m "So, how do you like the place so far?"
-    p "It looks like it's going to be a nice day today. We should check everything outside the house and the surounding area."
+    p "It looks like it's going to be a nice day today. We should check out the rest of the house and the surounding area."
     b "Yeah, fur sure!"
     l "Count me in."
     m "Yes, we definitely should. But there are a few things we need to take care of first."
     m "After breakfast, we really should go and unpack, for starters. You can all unpack your own things, and then I was thinking of going to the nearby town and do some grocery shopping while you guys unpack the rest."
     b "Sure [b_nn_m], we can do that."
     p "Yeah, no problem."
-    m  "Oh, actually, I would appreciate if one of you can come with me, girls? To help with the shopping."
+    m "Oh, actually, I would appreciate if one of you can come with me, girls? To help with the shopping."
     m "Would you mind [m_nn_l]? [m_nn_b] is good at organizing so she should probably do the unpacking."
     l "Uhm, yeah, I guess."
 
@@ -468,7 +468,7 @@ label day02:
 
             "[l_n] stays with you, [b_n] goes shopping."
             "TODO"
-            p "Don't worry [p_nn_m]. Me and [p_nn_l] can handle the unpacking if she wants to stay here and [p_nn_b] want to go shopping."
+            p "Don't worry [p_nn_m]. Me and [p_nn_l] can handle the unpacking if she wants to stay here and [p_nn_b] wants to go shopping."
             m "Are you sure?"
             l "Of course, [l_nn_m]."
             m "Is that ok for you too [b_n]?"
@@ -505,8 +505,8 @@ label day02:
     m "[p_n]?"
     p "Yes?"
     m "Before you go, would you mind carrying the last few bags and boxes in the hallway up to my room?"
-    p "Nope, I don't mind."
-    m "Thanks, honey. They're not that heavy, just a bit cumbersome, and I think you'll handle the stairs betters than me."
+    p "Sure, no problem."
+    m "Thanks, honey. They're not that heavy, just a bit cumbersome, and I think you'll handle the stairs better than me."
 
     scene black
     "While the others go to their rooms and starts unpacking, you carry the remaining luggage upstairs."
@@ -527,10 +527,10 @@ label day02:
     show player casual at center with dissolve:
         zoom .5
 
-    "You go to you room and start unpacking your bags. Unlike [p3_ref_bl], you don't have that much to unpack, so you're finished in just shy of 15 minutes."
+    "You go to you room and start unpacking your bags. Unlike [p3_ref_bl], you don't have that much to unpack, so you finish pretty quickly."
     p "Ok, that should do it."
     p "Hm."
-    p "I'll wait for [c001_home[nickname]] to finish before we start unpacking all the other things."
+    p "I'll wait for [c001_home[nickname]] to finish unpacking her stuff before we start with all the other things."
     p "I guess I can start setting up [p_nn_ms] laptop in the mean time."
 
     scene house stairs
@@ -605,18 +605,14 @@ label day02:
         zoom .5
     $ renpy.pause(0.2)
 
-    m "Okay, [c001_shop_n] and I are ready to go now. We'll be at least a couple of hours."
+    m "Okay, [c001_shop[name]] and I are ready to go now. We'll be at least a couple of hours."
 
     $ kitchen_table_setup(["c2", "table", "c1"], {"c1":"player laptop_at_kitchen talking"})
 
     "Kitchen stuff."
 
     
-    # Idea: After breakfast, time to unpack. m asks player to carry a few remaining bags to her room.
-    # p makes a few round trips, and gets to see m's suit cases and clothes layed out on the bed.
-    # then p starts unpacking his stuff. when done,he goes back into m's room (why? maybe to bathroom? taking shower?)
-    # and sees m undressing. she has her top off, wearing bra, half turned away.
-    # nothing much comes from it, but makes a nice comparison point for future events to see how much has changed
+
 
 
 
