@@ -533,50 +533,182 @@
                 <mxCell id="580" value="More time for yourself. You sit in the lounge room for a while, and confirm that the TV doesn't work." style="whiteSpace=wrap;html=1;strokeColor=#F0F0F0;strokeWidth=1;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="480" y="3050" width="200" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="586" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="583" target="585">
+                <mxCell id="586" value="" style="edgeStyle=none;html=1;" parent="1" source="583" target="585" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="583" value="It gets late and you all go to bed." style="whiteSpace=wrap;html=1;fillColor=none;strokeColor=#F0F0F0;strokeWidth=1;" parent="1" vertex="1">
                     <mxGeometry x="480" y="3190" width="200" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="588" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="585" target="587">
+                <mxCell id="588" value="" style="edgeStyle=none;html=1;" parent="1" source="585" target="587" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="585" value="Day 3, fixing the jacuzzi." style="whiteSpace=wrap;html=1;fillColor=none;strokeColor=#F0F0F0;strokeWidth=1;" vertex="1" parent="1">
+                <mxCell id="585" value="Day 3, fixing the jacuzzi." style="whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;strokeWidth=1;fontColor=#ffffff;" parent="1" vertex="1">
                     <mxGeometry x="480" y="3315" width="200" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="590" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="587" target="589">
+                <mxCell id="590" value="" style="edgeStyle=none;html=1;" parent="1" source="587" target="589" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="587" value="While eating breakfast together, you bring up the jacuzzi, and that you are going to see if it works." style="whiteSpace=wrap;html=1;fillColor=none;strokeColor=#F0F0F0;strokeWidth=1;" vertex="1" parent="1">
+                <mxCell id="587" value="While eating breakfast together, you bring up the jacuzzi, and that you are going to see if it works." style="whiteSpace=wrap;html=1;fillColor=none;strokeColor=#F0F0F0;strokeWidth=1;" parent="1" vertex="1">
                     <mxGeometry x="430" y="3455" width="300" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="592" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="589" target="591">
+                <mxCell id="592" value="" style="edgeStyle=none;html=1;" parent="1" source="589" target="591" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="589" value="Turns out, it doesn't work. But you spend basically the whole day trying to fix it. Possibly: You borrow the car, go into town and buy some tools and some cleaning materials for pools." style="whiteSpace=wrap;html=1;fillColor=none;strokeColor=#F0F0F0;strokeWidth=1;" vertex="1" parent="1">
+                <mxCell id="589" value="Turns out, it doesn't work. But you spend basically the whole day trying to fix it. Possibly: You borrow the car, go into town and buy some tools and some cleaning materials for pools." style="whiteSpace=wrap;html=1;fillColor=none;strokeColor=#F0F0F0;strokeWidth=1;" parent="1" vertex="1">
                     <mxGeometry x="410" y="3595" width="340" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="594" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="591" target="593">
+                <mxCell id="594" value="" style="edgeStyle=none;html=1;" parent="1" source="591" target="593" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="591" value="Some time during the day, when you are working on the jacuzzi, B comes to talk to you. She has been running/excersising." style="whiteSpace=wrap;html=1;fillColor=none;strokeColor=#F0F0F0;strokeWidth=1;" vertex="1" parent="1">
+                <mxCell id="591" value="Some time during the day, when you are working on the jacuzzi, B comes to talk to you. She has been running/excersising." style="whiteSpace=wrap;html=1;fillColor=none;strokeColor=#F0F0F0;strokeWidth=1;" parent="1" vertex="1">
                     <mxGeometry x="400" y="3735" width="360" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="596" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="593" target="595">
+                <mxCell id="596" value="" style="edgeStyle=none;html=1;" parent="1" source="593" target="595" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="593" value="Jokingly: &quot;I was kind of hoping you'd be done with the jacuzzi by now. I'd love to relax in it for a while after my run." style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#F0F0F0;strokeWidth=1;" vertex="1" parent="1">
+                <mxCell id="593" value="Jokingly: &quot;I was kind of hoping you'd be done with the jacuzzi by now. I'd love to relax in it for a while after my run." style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#F0F0F0;strokeWidth=1;" parent="1" vertex="1">
                     <mxGeometry x="460" y="3875" width="240" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="600" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="595" target="597">
+                <mxCell id="600" value="" style="edgeStyle=none;html=1;" parent="1" source="595" target="597" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="595" value="&quot;Heh, you and me both. I think I'm getting close, I should get it to work shortly. After that, I'll have to fill it up and put in the cleaning fluids that I bought. It have to sit for 12 hours. And then tomorow, I wouldn't mind some help scrubbing it clean.&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#F0F0F0;strokeWidth=1;" vertex="1" parent="1">
+                <mxCell id="595" value="&quot;Heh, you and me both. I think I'm getting close, I should get it to work shortly. After that, I'll have to fill it up and put in the cleaning fluids that I bought. It have to sit for 12 hours. And then tomorow, I wouldn't mind some help scrubbing it clean.&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#F0F0F0;strokeWidth=1;" parent="1" vertex="1">
                     <mxGeometry x="430" y="4010" width="300" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="597" value="You do indeed get it to work. You fill it up with water and put in the cleaning fluids." style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="602" value="" style="edgeStyle=none;html=1;" parent="1" source="597" target="601" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="597" value="You do indeed get it to work. You fill it up with water and put in the cleaning fluids." style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="500" y="4150" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="604" value="" style="edgeStyle=none;html=1;" parent="1" source="601" target="603" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="601" value="You go inside to shower. Going through M's room, she is in there thinking about her book (taking a break to brainstorm)." style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="4290" width="260" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="606" value="" style="edgeStyle=none;html=1;" parent="1" source="603" target="605" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="603" value="When you are done, you've been thinking about checking out the lake. Ask if M want to come with you." style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="4430" width="240" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="608" value="" style="edgeStyle=none;html=1;" parent="1" source="605" target="607" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="605" value="No, not right now. But ask your sisters.&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="4570" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="612" value="" style="edgeStyle=none;html=1;" parent="1" source="607" target="611" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="607" value="You ask B and L if they want to come with you. They do. You all walk out together." style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="4710" width="240" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="615" value="" style="edgeStyle=none;html=1;" parent="1" source="609" target="614" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="609" value="You get to the lake, and explore. You find: a small boat by a bridge, a small house (sauna)." style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="5000" width="260" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="613" value="" style="edgeStyle=none;html=1;" parent="1" source="611" target="609" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="611" value="Possibly some dialogue. Fill out later." style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="4850" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="617" value="" style="edgeStyle=none;html=1;" parent="1" source="614" target="616" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="614" value="Later, you go back to the house. During dinner, you tell M about what you found." style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="5140" width="240" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="619" value="" style="edgeStyle=none;html=1;" parent="1" source="616" target="618" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="616" value="At evening, you start to feel a bit horny sort of out of nowhere. Like you kinda' want to jack off. Maybe, add a small scene where you see one of the others, tits or ass or something. You decide against doing anything and go to bed." style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="5280" width="340" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="621" value="" style="edgeStyle=none;html=1;" parent="1" source="618" target="620" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="618" value="Day 4: Jacuzzi done, first use" style="whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+                    <mxGeometry x="470" y="5435" width="220" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="623" value="" style="edgeStyle=none;html=1;" parent="1" source="620" target="622" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="620" value="Breakfast?" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="5575" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="625" value="" style="edgeStyle=none;html=1;" parent="1" source="622" target="624" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="622" value="Cut to jacuzzi. Time to clean. B or L helping out?&amp;nbsp;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="5715" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="636" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="624" target="630">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="624" value="Maybe: Both B and L helps out initially, but after a while L goes off to take a run. (Timing?)" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="430" y="5855" width="300" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="639" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="628" target="638">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="628" value="This is the first point where you start to feel a bit uneasy, finding your sisters attractive. Show some inner dialogue of looking at them." style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="6130" width="260" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="637" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="630" target="628">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="630" value="Alternative: You decide to try out the jacuzzi together. You shower, wait for L to come back and shower, then get M and tell her you have a surprise. Everybody changes into swimsuit." style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="410" y="5990" width="340" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="641" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="638" target="640">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="638" value="Jump to later afternoon, in your room. You want to masturbate, and start thinking about the girls (player choice?). You catch yourself and stop." style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="6270" width="260" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="645" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="640" target="644">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="640" value="Jump to dinner. M notices that you are a bit off, you try to brush it off or explain it away." style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="460" y="6375" width="240" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="647" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="644" target="646">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="644" value="Jump to evening, you give in and masturbate, thinking about (player choice)?" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="6480" width="260" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="649" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="646" target="648">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="646" value="Day 5: ?" style="whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
+                    <mxGeometry x="470" y="6590" width="220" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="651" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="648" target="650">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="648" value="At breakfast: One of the girls is showing cleavage, and you keep stealing glances. She eventually notices and has inner dialogue:" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="6700" width="260" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="653" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="650" target="652">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="650" value="&quot;Is he looking at my breasts?&quot;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="490" y="6800" width="180" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="652" value="She becomes sure of it, is a bit embaressed and weirded out, tries to cover up her cleavage a bit. You realise that she noticed you and are even more embaressed." style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="420" y="6900" width="320" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="657" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="656" target="652">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="656" value="Add player choice? Decide who to look at? Decide whether to keep looking or stop? If looking it can come up in later conversations." style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=#F0F0F0;strokeWidth=1;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="860" y="6830" width="320" height="60" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
