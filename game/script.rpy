@@ -445,8 +445,8 @@ label day02:
     l "Uhm, yeah, I guess."
 
     # Abstract this at a later point, e.g. to a class, when it becomes clearer how it can be useful
-    $ c001_b = { "name":b_n, "nickname":p_nn_b, "file":"bigsister" }
-    $ c001_l = { "name":l_n, "nickname":p_nn_l, "file":"littlesister" }
+    $ c001_b = { "char":b, "name":b_n, "nickname":p_nn_b, "file":"bigsister" }
+    $ c001_l = { "char":l, "name":l_n, "nickname":p_nn_l, "file":"littlesister" }
 
     menu:
         "Yeah, [b_n] should help with unpacking.":
@@ -457,7 +457,7 @@ label day02:
 
             "[b_n] stays with you, [l_n] goes shopping."
             "TODO"
-            p "Yeah. [p_nn_b], you will know where stuff should go. You can organize everything and I'll help out."
+            p "Yeah. [p_nn_b], you'll know where stuff should go. You can organize everything and I'll help out."
             b "Sure, fine by me."
 
         "It's fine, me and [l_n] can handle the unpacking.":
@@ -478,14 +478,15 @@ label day02:
     m "And [p_n], once you're done unpacking, please set up my laptop for me, will you?"
     p "Yeah of course."
     m "Thanks. I have it up in my room."
-    b "When you are back and everything is done we could check out the area together."
+    p "Alright."
+    c001_home["char"] "And hey, when you guys come back and we're done unpacking we could go and check out the area together."
+    c001_shop["char"] "Definitely!"
 
     # Note. Initially, I was thinking of having a stationary laptop, thus m needing help to install everything.
     # However, there is no good place in the house to place it. So rather, I'll make it a laptop and build into the
     # story that it is a brand new laptop that the publishers paid for, and m needs help with the initial setup.
     # She normally uses a stationary laptop at home, and is not very tech savy.
 
-    m ""
     # bring up:
     # - player setting up moms laptop
     # - one of the girls going shopping with mom
@@ -509,7 +510,7 @@ label day02:
     m "Thanks, honey. They're not that heavy, just a bit cumbersome, and I think you'll handle the stairs better than me."
 
     scene black
-    "While the others go to their rooms and starts unpacking, you carry the remaining luggage upstairs."
+    "While the others go to their rooms and start unpacking, you carry the remaining luggage upstairs."
     "They are indeed rather cumbersome, so you have to carry them one at a time."
     "After a couple of trips, you finally bring the last box to [p_nn_ms] room."
 
@@ -530,8 +531,8 @@ label day02:
     "You go to you room and start unpacking your bags. Unlike [p3_ref_bl], you don't have that much to unpack, so you finish pretty quickly."
     p "Ok, that should do it."
     p "Hm."
-    p "I'll wait for [c001_home[nickname]] to finish unpacking her stuff before we start with all the other things."
-    p "I guess I can start setting up [p_nn_ms] laptop in the mean time."
+    p "I guess I'll wait for [c001_home[nickname]] to finish unpacking her stuff before we start with all the other things."
+    p "I can start setting up [p_nn_ms] laptop in the mean time."
 
     scene house stairs
     "You head back to [p_nn_ms] room to pick up her laptop."
@@ -570,27 +571,25 @@ label day02:
     p "..."
     p "So... I'll, get to it then."
     hide player with dissolve
-    m "Thank yooouuu!"
+    m "*Sweetly* Thank yooouuu!"
     mt "..."
-    mt "Hehe. That's what he gets for not knocking."
-    mt "I don't really mind him seeing me in my underwear, he's seen me in a swimsuit before any way."
-    mt "But I know what guys his age are like, and I could definitely tell he was embaressed!"
+    mt "Hehe. Sorry for embarassing you [m_nn_p], but that's what you get for not knocking."
+    mt "Not that it's such a big deal any way, he's seen me in a swimsuit before. Although, at his age, I think he's pretty flustered right about now."
     show mom casual underwear back at centerleft with dissolve:
         zoom .5
-    mt "He should try to find another girl friend *shuckle*."
-    mt "Although, it'll have to be after summer. I doupt he'll meet someone out here."
+    mt "He'll be stuck with as here during summer, but I hope he manages to find a new girlfriend once we get back home *shuckle*."
     mt "..."
 
     scene house stairs
     show player casual embaressed at center with dissolve:
         zoom .5
-    pt "Okaaayy... That was awkward."
+    pt "Shit... That was, awkward."
     
     scene house kitchen_table day
     $ kitchen_table_setup(["c2", "table", "c1"], {"c1":"player laptop_at_kitchen working"})
-    "You boot up [p_nn_ms] laptop, and go through the inital setup process."
-    "[p_nn_m!c] is what you'd like to call technologically inept, as least when it comes to computers."
-    "She often runs into problems doing the most basic things. Luckily, you're able to offer her pretty much 24/7 tech support."
+    "You boot up [p_nn_ms] new laptop, and go through the inital setup process."
+    "[m_n] is what you'd call technologically inept, as least when it comes to computers."
+    "She often runs into problems doing the most basic things. Luckily, you're able to provide her with pretty much 24/7 tech support."
     "She can handle her phone fairly well, which demonstrates that she's able to handle such things if she just spends some time with it, but never had any interest in using computers for anything other than work."
     "Which means, she can handle word processors, email and simple internet searches."
     "So, you deactivate several features and services that she has no need for, setup the apps that she's used to, and try to make it look as close as possible to her computer at home."
@@ -598,53 +597,95 @@ label day02:
     show mom casual2 at right with dissolve:
         zoom .5
     $ renpy.pause(0.2)
-    show littlesister casual at centerleft with dissolve:
+    show c001_shop["file"] casual at centerleft with dissolve:
         zoom .5
     $ renpy.pause(0.2)
-    show bigsister casual at left with dissolve:
+    show c001_home["file"] casual at left with dissolve:
         zoom .5
     $ renpy.pause(0.2)
 
     m "Okay, [c001_shop[name]] and I are ready to go now. We'll be at least a couple of hours."
+    p "Ok [p_nn_m]. I'm almost done with your laptop, then [c001_home[name]] and I'll take care of the unpacking."
+    c001_home["name"] "Yeah, we'll try to finish it before you get back."
+    m "Thank you. See you soon!"
+    m "Come, let's go [c001_shop[name]]."
+    c001_shop["char"] "Coming."
 
-    $ kitchen_table_setup(["c2", "table", "c1"], {"c1":"player laptop_at_kitchen talking"})
+    hide mom
+    hide c001_shop["file"]
+    "..."
+    $ kitchen_table_setup()
+    show player casual at centerright with dissolve:
+        zoom .5
+    
+    $ renpy.pause()
 
-    "Kitchen stuff."
+    p "Well, guess we should get started, huh?"
 
+    if c001 is 'b':
+        # big sister stays home
+        b "Yep, let's go."
+        scene black
+        "[b_n] immediately takes the lead and starts organizing things. You mostly unpack things and put them away where she tells you to."
+        "There's a dozen or so boxes and bags of varying sizes to unpack, containing kitchen utensils and appliances, towels, soap and shampoo, a bunch of books and magazines, some blankets in case the nights get cold, and a bunch of other house hold items."
+        "You also brought along your old tent and sleeping bags. They haven't been used for many years, but who knows, maybe you'll feel up for some camping this summer?"
+        "Both you and your [b_r_p] have to run back and forth between the rooms, and multiple round trips up and down the stairs. It takes you almost two hours to finish, after which you are both tired and sweaty."
+
+        scene house dining_room day
+
+        show bigsister casual at centerleft:
+            zoom .5
+        show player casual at right:
+            zoom .5
+        
+        b "Phew... That should be the last of it."
+        p "*Heavy breathing* Haaaah... Thank god. That was a lot more tiring than I thought."
+        b "*Jokingly* Ha, you big baby! Can't keep up with your [b_r_p]?"
+        p "Says the fitness freak, that spends all her waking hours at the gym? That hardly seem like a fair comparisson."
+        b "Well, maybe it would be, if you put in some hours of your own at the gym."
+        p "Yeah, yeah. I'll get around to it."
+        b "Sure you will - she says smiling."
+        p "Besides, I'm not the only one sweating my butt off right now."
+        "Your [b_r_p] looks herself over."
+        b "Heh, you got me there."
+        b "I'm gonna go take a shower."
+        "[b_n] starts to turn towards the door."
+
+        menu:
+            "Not if I get there first!":
+                "You start sprinting for the door to get out before your [b_r_p]. She is stood closer to it, but by taking her by surprise you just manage to squeeze past her."
+                b "Hey! No way. I'm gonna' go first!"
+                p "Not if I can help it!"
+                scene house entrance day
+                "You both rush out into the hallway, towards the stairwell."
+                "[b_n] tries to grab and hold you back as you're rounding the corner before the steps, but she can't hold on as she's rounding the corner herself."
+                scene house stairs
+                "You're now halfway up the steps, with [b_n] right behind you. You need to get a change of clothes from your room. Luckily, your room is closest to both the stairs and the bathroom."
+
+                menu:
+                    "Head straight for the bathroom!":
+                        "Although it is just a little friendly competion, this is still a race, and you intend to win."
+                        scene house master_bedroom day
+                        "Disregarding a change of clothes, you turn left after reaching the top step and head for to your [m_r_ps] room."
+                        "You run through her room and straight to the bathroom."
+                        scene house master_bathroom view1
+                        "Laughing to yourself, you quickly strip down and step into the shower."
+
+                    "Run to your room!":
+                        ""
+
+            "Ok, you go first."
+                ""
+
+
+    
+    else:
+        # little sister stays home
+        l "Yep, let's go."
     
 
 
 
-
-    # Morning, stretch, go to bath room. Knock, mom is in there, so you wait.
-    # Your turn... Then, go to kitchen, mom is making breakfast (fully clothed), you say good morning.
-    # Mom asks you to check if the girls are up, breakfast won't be long.
-    # You check on big sister, knock at her door and enter at the same time. She's up, wearing pyamas and holding underwear. Breakfast... She's just gonna take a shower first. ok.
-    # Check on little sister, knock and enter, she's awake but still in bed. come one, time to get up. yawns, ok fine... wearing pyamas (long sleeved shirt and trousers)
-
-    # Breakfast. small talk. mom asks you to help her set up her laptop later, so she can start working.
-    # She also asks the girls to help her with some unpacking. We don't have to do it all, but please help me out a little.
-
-    # After breakfast, you brush your teeth, then prepare to set up moms laptop at work desk.
-    # You see all girls unpacking stuff. Mom bends over to pick up something, and you see her cleavage and part of her bra, but think nothing of it.
-    # You carry laptop and stuff. Skip to having set it upp. Call for mom that its done.
-    # Mom thanks you all, and suggests that you all check out the surrounding area.
-
-    # You all leave together (you and sisters), finding and checking out:
-    #     - lake, bridge, small boat
-    #     - woods
-    #     - field of grass
-    #     - you find a jacuzzi close to the house, it have seen better days. needs cleaning.
-        
-    # Later, you come back, go to your room. Lay on bed with your phone for a while.
-
-    # Later again, dinner everyone together.
-    # Someone asks mom how the book is coming along. fairly well, she briefly describes the plot she's working on. looking to be a murder mystery (or something else?)
-    # You mention the jacuzzi, and suggest you should get it cleaned up. Mom asks your sisters to help you. They agree but are not looking forward to it.
-
-    # Evening, you sit on the couch (watching tv? only basic channels. or, a movie on DVD?)
-    # Drinking coffee/tea. Playing on phone?
-    # Then, going to bed...
 
     scene black
     centered "Sorry, that's it for now.\nThis is just a very early prototype where I test things out."
